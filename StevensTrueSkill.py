@@ -1,0 +1,15 @@
+import trueskill
+from trueskill import Rating
+r1 = Rating()
+r2 = Rating()
+print(r1)
+r1, r2 = trueskill.rate_1vs1(r1, r2)
+print(r1)
+print(r2)
+r1, r2 = trueskill.rate_1vs1(r1, r2)
+print(r1)
+print(r2)
+r3 = Rating(35)
+r2, r3 = trueskill.rate_1vs1(r2, r3)
+print(r1)
+print(r2)
